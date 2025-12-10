@@ -12,13 +12,13 @@ function sayHi() {
 
 sayHi();
 
-let divisionMachine = (number1, number2, number3, number4) => {
+function divisionMachine(number1, number2, number3, number4) {
     let result1 = number1 / number2;
     let result2 = result1 / number3;
     let result3 = result2 / number4;
     let result4 = result3 / result1;
     let result5 = result4 / result2;
-    return result5;
+    return result1 + result2 + result3 + result4 + result5;
 }
 
 console.log(divisionMachine(16, 8, 4, 2));
