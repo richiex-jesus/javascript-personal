@@ -19,11 +19,24 @@
     
         console.log(multiply(3, 2))
 
-        function capitalize(firstLetter) {
-        
+        function capitalise(word) {
+            let firstLetter = word.substr(0, 1)
+            let letterCapitalised = firstLetter.toUpperCase()
+            let remainingLetters = word.substr(1)
+            let letterUncapitalised = remainingLetters.toLowerCase()
+            return (letterCapitalised + letterUncapitalised)
         }
 
-        console.log(capitalize("HIIIIi"))
+        console.log(capitalise("hEy ThErE!"))
+
+        function lastLetter(testWord) {
+            let finalLetter = testWord.substr(-1)
+            let finalLetterUncapitalised = finalLetter.toLowerCase()
+            return (finalLetterUncapitalised)
+        }
+
+        console.log(lastLetter("HEY THERE"))
+
     </script>
 </body>
 </html>
