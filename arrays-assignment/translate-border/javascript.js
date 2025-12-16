@@ -1,11 +1,11 @@
 function camelise() {
 
-    let testString = '-testing-frightened'
+    let testString = 'left-border-width'
     let arr = testString.split('-');
-    console.log( arr );
+    console.log( arr ); // ["left", 'border', 'width']
 
     let arrUpdated = arr.slice(1);
-    console.log( arrUpdated );
+    console.log( arrUpdated ); // ['border', 'width']
 
     function capitalise(item) {
         let firstLetterOfStr = item.slice(0, 1);
@@ -16,16 +16,16 @@ function camelise() {
     }
 
     let arrCapitalised = arrUpdated.map(capitalise);
-    console.log(arrCapitalised);
+    console.log(arrCapitalised); // ['Border', 'Width']
 
     let arrRemaining = arr.slice(0, 1);
-    console.log(arrRemaining);
+    console.log(arrRemaining); // ['left']
 
     let arrNew = arrRemaining.concat(arrCapitalised);
-    console.log(arrNew);
+    console.log(arrNew); // ['left', 'Border' 'Width'] 
 
     let arrFinal = arrNew.join('');
-    console.log(arrFinal);
+    console.log(arrFinal); // ['leftBorderWidth']
 
 
     
