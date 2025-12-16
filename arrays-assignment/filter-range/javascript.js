@@ -12,7 +12,7 @@ function filterRange (arr, a, b) {
 
     let arrFiltered = arr.filter(filterActual);
     console.log(arrFiltered);
-    console.log(arr)
+    // console.log(arr)
 }
 
 filterRange(arr, a, b);
