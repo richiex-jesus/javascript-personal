@@ -14,7 +14,7 @@ function copySortedArr(arr) {
 // method 3:
     let sortedThree = arr.slice().sort();
     alert(sortedThree);
-    alert(arr)
+    alert(arr);
 }
 
 copySortedArr(arr);
