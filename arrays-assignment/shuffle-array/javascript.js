@@ -1,9 +1,28 @@
-let arr = [1, 2, 3];
+let arr = [1, 2, 3, 5, 8];
+
+// function shuffle(arr) {
+// // method 1:
+//     arr.sort(() => Math.random() - 0.5); // Math.random generates num btw 0 and 1 (e.g. 0.4753..., 0.75643....)
+
+//     // -1 0 1 
+//     // (1, 2) --> -0.2
+//     // (1, 3) --> 0.456....
+
+//     // [3, 1, 2]
+    
+//     console.log(arr)
+// }
 
 function shuffle(arr) {
-// method 1:
-    arr.sort(() => Math.random() - 0.5);
-    console.log(arr)
+    arr.sort(shuffleCheck);
+    console.log(arr);
+}
+
+function shuffleCheck(a, b) {
+    console.log(a, b);
+    let r = Math.random() - 0.5;
+    console.log("result =", r)
+    return r
 }
 
 shuffle(arr);
@@ -14,7 +33,7 @@ shuffle(arr);
 
 
 // function shuffle(arr) {
-//     let randomNumber = (Math.floor(Math.random)) * 6 + 1;
+//     let randomNumber = Math.floor(Math.random()) * 6 + 1;
 //     if (randomNumber == 1) {
 //         return arr = [1, 2, 3];
 //         console.log(arr)
