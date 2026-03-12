@@ -22,7 +22,7 @@
         function capitalise(word) {
             let firstLetter = word.substr(0, 1)
             let letterCapitalised = firstLetter.toUpperCase()
-            let remainingLetters = word.substr(1)
+            let remainingLetters = word.slice(1)
             let letterUncapitalised = remainingLetters.toLowerCase()
             return (letterCapitalised + letterUncapitalised)
         }
