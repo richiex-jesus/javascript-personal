@@ -9,6 +9,4 @@ function reverseNum(num) {
     console.log(answer)
 }
 
-
-
 reverseNum(123456789);
