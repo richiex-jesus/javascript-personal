@@ -10,7 +10,7 @@ function stringCombo(word) {
         let index_number = wordArray.indexOf(letter)
         // a for-loop that will generate all possible letter combinations beginning with the focused letter
         for (i = index_number; i < (wordArray.length); i++) {
-            // print out the result of the letter combination in the console.s
+            // print out the result of the letter combination in the console.
             console.log(letter + wordArray[index_number])
         }
     }
