@@ -8,3 +8,6 @@ function checkPalindrome(word) {
         console.log(false)
     }
 }
+
+let word = prompt("Please enter a word:")
+checkPalindrome(word);
