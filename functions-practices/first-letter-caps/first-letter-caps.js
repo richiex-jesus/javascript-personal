@@ -3,19 +3,14 @@
 function firstLetterCaps(string) { 
     wordArray = string.split(' '); // this is done to split up by individual words rather than letters. 
     newArray = [];
-    for (index in wordArray) { // for every word in wordArray:
-        let word = wordArray[index]; // this is the word.
-        wordLowerCase = word.toLowerCase(); // convert the entire word to lowercase first.
-        let wordLowerCaseSplit = wordLowerCase.split(''); // assign the split lowercase word to an array variable, which is now MUTABLE!
-        (wordLowerCaseSplit[0]).toUpperCase() // this is the important step which supposedly converts the first letter to uppercase.
-        sortedWord = wordLowerCaseSplit.join(''); // join up the newly updated word.
-        // update the word in the initial index of the old wordArray
-        newArray.push(sortedWord);
-        console.log(newArray)
-        return newArray;
-        
+    for (i = 0; i < wordArray.length; i++) {
+        let word = wordArray[i].toLowerCase();
+        // word is a string. so, we can apply the string methods and also directly access the first letter which is at index 0.
+        updatedWord = word[0].toUpperCase() + word.slice(1);
+        // push the updated word into the new array.
+        newArray.push(updatedWord);
     }
-    console.log(wordArray);
+    return console.log(newArray.join(' '));
 }
 
 firstLetterCaps("the quick brown fox")
