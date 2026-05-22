@@ -1,12 +1,11 @@
 function findLongestWord(sentence) {
     let wordArray = sentence.split(' ');
-    let longestWord = wordArray[0];
     for (i = 0; i < wordArray.length; i++) {
-        if (wordArray[0].length <= wordArray[i + 1].length) {
-            longestWord = wordArray[i + 1];
-        }
+        if (wordArray[0].length <= wordArray[i].length) {
+            wordArray[0] = wordArray[i];
+        } else {}
     }
-    return console.log(longestWord)
+    return console.log(wordArray[0]);
 }
 
-findLongestWord("what is my richard")
+findLongestWord(prompt("enter a random sentence."));
