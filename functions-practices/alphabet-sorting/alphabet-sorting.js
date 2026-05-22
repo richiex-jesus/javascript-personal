@@ -15,4 +15,4 @@ function alphabetSort(userWord) {
 
 // create a variable that accepts a text input from a user (using prompt). name the variable userWord.
 userWord = prompt("enter a word:")
-alphabetSorted(userWord);
+alphabetSort(userWord);
